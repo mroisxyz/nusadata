@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nusa Data — a clearly sourced statistical portrait of the Republic of Indonesia: people, economy, regions and method.">
+  <title>Nusa Data — Indonesia in numbers</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="Nusa Data, home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Nusa Data<span class="brand-sub">Republic of Indonesia</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#/" data-route="/">Overview</a>
+        <a href="#/people" data-route="/people">People</a>
+        <a href="#/economy" data-route="/economy">Economy</a>
+        <a href="#/regions" data-route="/regions">Regions</a>
+        <a href="#/about" data-route="/about">About</a>
+      </nav>
+      <div class="year-control">
+        <label for="yearSelect">Data year</label>
+        <select id="yearSelect" aria-label="Choose reference year">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024" selected>2024</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <noscript><p class="section">Nusa Data needs JavaScript to draw its charts and tables. The source data and method are listed in the site files.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Nusa Data</strong>
+        <p>A compact, sourced portrait of Indonesia. Figures are attributed to BPS, the World Bank, the UN, UNDP, UNESCO and the IMF, each with its own reference year.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#/about">Method &amp; sources</a>
+        <a href="#/regions">Provinces</a>
+        <a href="#/">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
