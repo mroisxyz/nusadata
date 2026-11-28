@@ -1,4 +1,5 @@
-// Nusa Data — boot and hash router. Static hosting friendly; no server needed.
+// Nusa Data — boot and hash router. Built for static hosting with no server.
+// The selected year is held in memory; all figures are read from data.js.
 
 import { years } from './data.js';
 import { renderOverview, renderPeople, renderEconomy, renderRegions, renderAbout } from './pages.js';
